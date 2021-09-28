@@ -26,3 +26,17 @@ a:active { color: #0000FF; }
 li{
   color: white;
 }
+.moods{
+  float: left;
+  padding: 10px;
+
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.moods>img{
+  width: 300px;
+  height: 400px;
+}
