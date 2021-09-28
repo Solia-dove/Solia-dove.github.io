@@ -6,6 +6,9 @@ body{
     color:white;
     font-family: 'Times New Roman','Courier New', Courier, monospace , serif ;
   }
+  h1{
+    font-weight: 400;
+  }
   h2{
       color: chocolate;
   }
