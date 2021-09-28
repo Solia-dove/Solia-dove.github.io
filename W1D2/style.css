@@ -1,8 +1,8 @@
 body{
-    background-color:rgba(0, 0, 0, 0.123);
+    background-color:darkolivegreen;
   }
   p,h1,ul{
-    font-size: 2.em;
+    font-size: 18px;
     color:white;
     font-family: 'Times New Roman','Courier New', Courier, monospace , serif ;
   }
@@ -10,7 +10,7 @@ body{
       color: chocolate;
   }
   .behavior{
-      color: darkgoldenrod;
+      color: rgb(238, 173, 8);
   }
  /* unvisited link */
 a:link { color: #e77e7e; }
