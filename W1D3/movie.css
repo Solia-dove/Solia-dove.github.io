@@ -1,3 +1,124 @@
-body{
-    background-image:url(https://github.com/Solia-dove/Solia-dove.github.io/blob/main/W1D3/images/background.png?raw=true) ;
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("background.png");
+}
+header {
+    background: url("bannerbg.png");
+    background-repeat: repeat-x;
+}
+
+header>img {
+ width: 100%;
+}
+header>div {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+.body_container {
+    margin: auto;
+    max-width: 800px;
+}
+.body_container>h1{
+    font-size: 24pt;
+   text-align: center;
+    font-weight: 800;
+   text-shadow: 3px 3px #999999;
+}
+
+.body_container>div {
+    border: 3px solid grey;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #A2B964;
+}
+.body_container>.overview{
+    float: right;
+    margin-left: 60px;
+}
+
+.rottenbig>img{
+background-image: url(bannerbg.png);
+height: 30px;
+}
+ .body_container>div>aside {
+        float: right;
+        font-size: 11px;
+        width: 25%;
+    }
+    #body-content{
+        vertical-align: middle;
+        font-size: 8pt;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .body-content-header{
+        background-image: url(rbg.png);
+        background-repeat: repeat-x;
+        color: red;
+        font-size: 48pt;
+
+    }
+    #body_content {
+        width: 70%;
+    }
+    
+    .reviews{
+    column-count: 2;
+    background-image: url("background.png");
+    overflow: auto;
+
+    }
+    .reviews>div{
+        width: 85%;
+        float: left;
+    }
+   .user-review>p>q{
+       border: gray;
+       background-color: #E8DC9B;
+       font-size: 10pt;
+       font-weight: bold;
+        
+    }
+    .user-review{
+        padding: 10px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+.quote{
+    border: solid grey 5px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #E8DC9B;
+    font-size: 8pt;
+}
+.critic {
+    font-size: 13px;
+    color: grey;
+}
+
+.user-review img {
+    float: left;
+    vertical-align: top;
+}
+ul>li{
+    list-style-type: none;
+    padding: 0;
+}
+
+P#pegination {
+    text-align: center;
+}
+
+div#validator {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#detail {
+    padding: 0 5px;
+}
+#detail>dt{
+    font-weight: 400;
 }
