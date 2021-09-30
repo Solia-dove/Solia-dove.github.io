@@ -5,7 +5,7 @@ body{
     grid-template-columns: auto;
 }
 header{
-    background-color:darkcyan;
+    background-color:lightskyblue;
     padding: 10px;
     text-align: center;
     font-size: 20px;
@@ -20,6 +20,7 @@ nav>p{
     padding: 10px;
     border: solid 1px black;
     margin: 0;
+    color: white;
 }
 #columns{
     display: flex;
