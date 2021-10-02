@@ -93,4 +93,15 @@ const d = a.reduce(function(prevValue, elem, i, array){
   return prevValue * elem;
 });
 
-console.log(filterLongWords1(["ab","c","hello"],1))
+
+function shortest(s1,s2,s3){
+    if(s1.length<s2.length && s1.length<s3.length){
+    return s1;
+    }
+    else if(s2.length<s1.length && s2.length<s3.length){
+    return s2;
+    }
+    else
+    return s3;
+    }
+console.log(shortest("ab","cggg","hello"))
