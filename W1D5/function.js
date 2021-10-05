@@ -105,3 +105,8 @@ function shortest(s1,s2,s3){
     return s3;
     }
 console.log(shortest("ab","cggg","hello"))
+
+
+const a= [1,2,3,4];
+const reducer = (accumulator, currentValue)=>accumulator+currentValue;
+cons.log(a.reduce(reducer));
