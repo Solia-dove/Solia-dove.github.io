@@ -1,0 +1,43 @@
+const express= require('express');
+const app = express();
+
+app.listen(3000)
+console.log("your server is running on port 3000!!")
+app.use(function (req,res,next){
+    console.log("mw--"+req.url)
+    next();
+})
+app.use(express.urlencoded({
+    extended:true
+}))
+app.get('/',(req,res)=>{
+const form=`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/result">
+    <label for="name" >Name</lable>
+    <input id="name"  type="text" name="name">
+    <label for="age" >Age</lable>
+    <input id="age" type="number" name="age">
+    <input type="submit" value ="submit Query" >
+    </form>
+</body>
+</html>
+`
+res.send(form);
+});
+
+app.post('/result',(req,res)=>{
+    console.log(req +"this request");
+    let name= req.body.name;
+    let age=req.body.age;
+    console.log("age="+age)
+   name=(name)?name:"your name";
+   age=(!age)?"your age":age;
+    res.end(`welcome ${name} your age is ${age}`)
+});
