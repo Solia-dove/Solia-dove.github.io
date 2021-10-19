@@ -12,13 +12,6 @@ app.use(express.urlencoded({
 }))
 app.get('/',(req,res)=>{
 const form=`
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
     <form method="POST" action="/result">
     <label for="name" >Name</lable>
     <input id="name"  type="text" name="name">
@@ -26,8 +19,6 @@ const form=`
     <input id="age" type="number" name="age">
     <input type="submit" value ="submit Query" >
     </form>
-</body>
-</html>
 `
 res.send(form);
 });
